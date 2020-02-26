@@ -1,9 +1,9 @@
 import glob
 import logging
 
+
 class DataChecker:
     """This class represents the checker for the Graphs' data."""
-
     __author__ = "Marconi Gomes"
 
     @staticmethod
