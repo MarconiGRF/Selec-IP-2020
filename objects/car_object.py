@@ -3,10 +3,12 @@ class Car:
     __author__ = "Marconi Gomes"
 
     def __init__(self):
-        self.name = None
         self.model = None
         self.brand = None
+        self.potency = None
+        self.fuel = None
         self.vehicle_type = None
+        self.steering = None
         self.color = None
         self.location = None
         self.year = None
@@ -16,12 +18,7 @@ class Car:
         self.state = None
         self.pictures = None
         self.address = None
-
-    def get_name(self):
-        return self.name
-
-    def set_name(self, name):
-        self.name = name
+        self.exchange = None
 
     def get_model(self):
         return self.model
@@ -35,11 +32,29 @@ class Car:
     def set_brand(self, brand):
         self.brand = brand
 
+    def get_potency(self):
+        return self.potency
+
+    def set_potency(self, potency):
+        self.potency = potency
+
+    def get_fuel(self):
+        return self.fuel
+
+    def set_fuel(self, fuel):
+        self.fuel = fuel
+
     def get_vehicle_type(self):
         return self.vehicle_type
 
     def set_vehicle_type(self, vehicle_type):
         self.vehicle_type = vehicle_type
+
+    def get_steering(self):
+        return self.steering
+
+    def set_steering(self, steering):
+        self.steering = steering
 
     def get_color(self):
         return self.color
@@ -94,3 +109,9 @@ class Car:
 
     def set_address(self, address):
         self.address = address
+
+    def get_exchange(self):
+        return self.exchange
+
+    def set_exchange(self, exchange):
+        self.exchange = exchange

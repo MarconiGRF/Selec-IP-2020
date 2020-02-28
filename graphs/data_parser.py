@@ -7,7 +7,8 @@ class DataParser(ABC):
 
     def __init__(self, car):
         self.car = car
+        self.file_data = None
 
     @abstractclassmethod
-    def parse(self, txt_filename):
+    def parse(cls, txt_filename):
         pass
