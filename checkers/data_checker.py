@@ -9,7 +9,7 @@ class DataChecker:
     @staticmethod
     def check_files():
         """Checks the test files using glob."""
-        print("Checking files...")
+        print("----- Checking files... -----")
 
         try:
             filenames = glob.glob("./test_data/*.txt")
@@ -19,7 +19,7 @@ class DataChecker:
                 if not (filename in filenames):
                     raise Exception(filename + " not found.")
 
-            print("OK.")
+            print("----- OK -----")
 
         except Exception as ex:
             logging.exception(str(ex))

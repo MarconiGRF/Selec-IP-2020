@@ -13,8 +13,10 @@ class Car:
         self.location = None
         self.year = None
         self.mileage = None
+        self.plate_ending = None
         self.ports = None
         self.price = None
+        self.photos = None
         self.state = None
         self.pictures = None
         self.address = None
@@ -115,3 +117,15 @@ class Car:
 
     def set_exchange(self, exchange):
         self.exchange = exchange
+
+    def get_plate_ending(self):
+        return self.plate_ending
+
+    def set_plate_ending(self, plate_ending):
+        self.plate_ending = plate_ending
+
+    def get_photos(self):
+        return self.photos
+
+    def set_photos(self, photos):
+        self.photos = photos
